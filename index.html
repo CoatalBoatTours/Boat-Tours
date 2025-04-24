@@ -3,33 +3,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Coastal Boat Tours</title>
+  <title>Coastal Boat Tours - Coming Soon</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f4f8;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f7fb;
+      margin: 0;
+      padding: 0;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-    }
-    .container {
+      flex-direction: column;
       text-align: center;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    input[type="password"] {
+    img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #004466;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    input {
       padding: 10px;
-      width: 200px;
-      margin-top: 15px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 220px;
     }
     button {
       padding: 10px 20px;
-      margin-top: 10px;
+      font-size: 16px;
+      background-color: #004466;
+      color: white;
+      border: none;
+      cursor: pointer;
     }
     .error {
       color: red;
@@ -38,20 +47,19 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Enter Password to Access Coastal Boat Tours</h2>
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="checkPassword()">Enter</button>
-    <div class="error" id="error"></div>
-  </div>
+  <img src="logo.png" alt="Coastal Boat Tours Logo">
+  <h1>Coming Soon - Coastal Boat Tours</h1>
+  <input type="password" id="password" placeholder="Enter Password">
+  <button onclick="checkPassword()">Enter</button>
+  <div class="error" id="error"></div>
 
   <script>
     function checkPassword() {
       const input = document.getElementById("password").value;
       if (input === "Boattours2025") {
-        window.location.href = "real_home.html";
+        window.location.href = "real_index.html";
       } else {
-        document.getElementById("error").textContent = "Incorrect password. Please try again.";
+        document.getElementById("error").textContent = "Incorrect password.";
       }
     }
   </script>
