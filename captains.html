@@ -2,76 +2,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Captains - Coastal Boat Tours</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    .captain-profile {{
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }}
-    .captain {{
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-      align-items: center;
-      background: #f9f9f9;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }}
-    .captain img {{
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px 0 0 10px;
-    }}
-    .captain-info {{
-      flex: 1;
-      padding: 20px;
-    }}
-    .captain-info h2 {{
-      margin-top: 0;
-    }}
-  </style>
+    <meta charset="UTF-8">
+    <title>Meet the Captains</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .captain-section {
+            padding: 40px 20px;
+        }
+        .captain-section img {
+            max-width: 90%%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .captain-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .captain-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .captain-section li {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1 style="text-align:center;">Meet Our Captains</h1>
-  </header>
-  <main class="captain-profile">
-    <section class="captain">
-      <img src="cory1.jpg" alt="Captain Cory with a manatee"/>
-      <div class="captain-info">
+    <div class="captain-section">
         <h2>Captain Cory Crouch</h2>
-        <p>A passionate fisherman, nature lover, and sunset chaser, Captain Cory brings heart and skill to every tour. Great with kids and always accompanied by his loyal pup, Cory is ready to make your day on the water unforgettable.</p>
+        <img src="cory.jpg" alt="Captain Cory Crouch">
         <ul>
-          <li>Fisherman</li>
-          <li>Dog lover</li>
-          <li>Great with kids</li>
-          <li>Sunset chaser</li>
-          <li>Loves nature and animals</li>
-            <li><a href="captain.html">Captain</a></li>
-</ul>
-      </div>
-    </section>
-    <section class="captain">
-      <img src="cory2.jpg" alt="Captain Cory with dog by pool"/>
-      <div class="captain-info">
-        <h2>Chill Vibes Only</h2>
-        <p>Captain Cory’s calm and friendly energy creates the perfect atmosphere to relax and enjoy Sarasota’s beautiful waters.</p>
-      </div>
-    </section>
-    <section class="captain">
-      <img src="cory3.jpg" alt="Captain Cory holding a mahi-mahi"/>
-      <div class="captain-info">
-        <h2>Ready for Adventure</h2>
-        <p>Whether you’re looking to spot dolphins, catch a big one, or just enjoy the views, Cory knows all the best spots.</p>
-      </div>
-    </section>
-  </main>
+            <li>Fisherman</li>
+            <li>Dog lover</li>
+            <li>Great with kids</li>
+            <li>Sunset chaser</li>
+            <li>Loves nature and animals</li>
+        </ul>
+    </div>
 </body>
 </html>
