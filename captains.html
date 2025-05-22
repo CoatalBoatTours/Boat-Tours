@@ -2,55 +2,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Meet the Captains</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .captain-container {
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-        .captain-container img {
-            width: 100%;
-            max-width: 400px;
-            border: 10px solid #c2b280; /* rope-like color */
-            border-radius: 10px;
-        }
-        .captain-container hr {
-            margin: 20px auto;
-            width: 60%;
-            border: 1px solid #ccc;
-        }
-        .captain-bio {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            text-align: left;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meet the Captains</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="captain-container">
-        <h2>Captain Cory Crouch</h2>
-        <img src="cory.jpg" alt="Captain Cory Crouch">
-        <hr>
-        <div class="captain-bio">
-            <p><strong>Meet Captain Cory Crouch</strong> – a true waterman at heart. With a deep love for fishing, nature, and all things outdoors, Cory brings passion and positive energy to every Coastal Boat Tour. He’s not just a skilled captain; he’s someone who genuinely loves showing people the magic of Sarasota’s waters.</p>
-            <p>When he’s not navigating the boat, you’ll find him soaking in sunsets, casting lines, or spending time with his loyal dog. Great with kids and known for his calm, friendly presence, Cory is the kind of captain you’ll want to tour with again and again.</p>
-            <p><strong>Things Captain Cory loves:</strong></p>
-            <ul>
-                <li>Fisherman</li>
-                <li>Dog lover</li>
-                <li>Great with kids</li>
-                <li>Sunset chaser</li>
-                <li>Loves nature and animals</li>
-            </ul>
-        </div>
+  <header class="header">
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="custom.html">Custom Inquiries</a></li>
+        <li><a href="captains.html">Meet the Captains</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo" />
+      <h1>Meet the Captains</h1>
+      <p>Learn more about the amazing people behind your tour</p>
     </div>
+  </header>
+
+  <main class="captain-profile">
+    <section class="captain-section">
+      <h2 class="captain-name">Captain Cory Crouch</h2>
+      <img src="images/captain-cory.jpeg" alt="Captain Cory Crouch" class="captain-photo" />
+      <hr class="divider" />
+      <p class="captain-bio">
+        Meet Captain Cory Crouch – a true waterman at heart. With a deep love for fishing, nature, and all things outdoors,
+        Cory brings passion and positive energy to every Coastal Boat Tour. He’s not just a skilled captain; he’s someone
+        who genuinely loves showing people the magic of Sarasota’s waters.
+      </p>
+      <p class="captain-bio">
+        When he’s not navigating the boat, you’ll find him soaking in sunsets, casting lines, or spending time with his
+        loyal dog. Great with kids and known for his calm, friendly presence, Cory is the kind of captain you’ll want to
+        tour with again and again.
+      </p>
+      <ul class="captain-traits">
+        <li>Fisherman</li>
+        <li>Dog lover</li>
+        <li>Great with kids</li>
+        <li>Sunset chaser</li>
+        <li>Loves nature and animals</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
