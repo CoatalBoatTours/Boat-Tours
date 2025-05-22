@@ -1,51 +1,60 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<title>Book Your Tour | Coastal Boat Tours</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="styles.css" rel="stylesheet"/>
-<link href="favicon.png" rel="icon" type="image/png"/>
+    <meta charset="UTF-8">
+    <title>Book Your Tour | Coastal Boat Tours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
+
 <nav class="navbar">
-<div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">☰</div>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="tours.html">Book Now</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="custom.html">Custom Inquiries</a></li>
+    <div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">&#9776;</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    <li><a href="custom.html">Custom Inquiries</a></li>
+        <li><a href="captain.html">Captain</a></li>
 </ul>
-<a href="captains.html">Captains</a></nav>
-<header class="hero">
-<img alt="Coastal Boat Tours Logo" class="logo" src="logo.png"/>
-<h1>Book Your Tour</h1>
-<p>Tell us what day you want to cruise</p>
-</header>
-<section class="booking-form">
-<form data-netlify="true" method="POST" name="booking">
-<label for="name">Name:</label>
-<input id="name" name="name" required="" type="text"/>
-<label for="email">Email:</label>
-<input id="email" name="email" required="" type="email"/>
-<label for="phone">Phone:</label>
-<input id="phone" name="phone" required="" type="tel"/>
-<label for="tour">Tour Type:</label>
-<select id="tour" name="tour">
-<option value="4-Hour Charter">4-Hour Charter ($550)</option>
-<option value="6-Hour Charter">6-Hour Charter ($825)</option>
-<option value="Sunset Cruise">Sunset Cruise ($350)</option>
-</select>
-<label for="date">Preferred Date:</label>
-<input id="date" name="date" required="" type="date"/>
-<label for="time">Preferred Time:</label>
-<input id="time" name="time" required="" type="time"/>
-<label for="notes">Additional Notes:</label>
-<textarea id="notes" name="notes" rows="4"></textarea>
-<button type="submit">Request Booking</button>
-</form>
-</section>
+</nav>
+
+    <header class="hero">
+        <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo">
+        <h1>Book Your Tour</h1>
+        <p>Tell us what day you want to cruise</p>
+    </header>
+    <section class="booking-form">
+        <form name="booking" method="POST" data-netlify="true">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="tour">Tour Type:</label>
+            <select id="tour" name="tour">
+                <option value="4-Hour Charter">4-Hour Charter ($550)</option>
+                <option value="6-Hour Charter">6-Hour Charter ($825)</option>
+                <option value="Sunset Cruise">Sunset Cruise ($350)</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Request Booking</button>
+        </form>
+    </section>
 </body>
 </html>
