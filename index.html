@@ -1,91 +1,82 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Coastal Boat Tours</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.png" type="image/png">
+<meta charset="utf-8"/>
+<title>Coastal Boat Tours</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="favicon.png" rel="icon" type="image/png"/>
 </head>
 <body>
-
 <nav class="navbar">
-    <div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">&#9776;</div>
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tours.html">Book Now</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    <li><a href="custom.html">Custom Inquiries</a></li>
-    <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
-
-    <header class="hero">
-        <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo">
-        <h1>Coastal Boat Tours</h1>
-        <p>Explore Sarasota by Water</p>
-        <button class="btn" onclick="confirmBooking('tours.html')">Book Now</button>
-        
-    </header>
-    <section id="tours">
-        
-        <div class="tour-options">
-            
-        <div class="tour">
-            <h3>2-Hour Charter</h3>
-            <p>$275</p>
-            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/DENQ5NJ4IY2XIV2OE5WTACME')">Book & Pay</button>
-        </div>
-
-        <div class="tour">
-                <h3>4-Hour Charter</h3>
-                <p>$550</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/HKUPEXV4PF6T3GFFLP3SA6TI')">Book & Pay Now</button>
-            </div>
-            <div class="tour">
-                <h3>6-Hour Charter</h3>
-                <p>$825</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/FAZWB6RPQT4CHJ6GH5FUHU4P')">Book & Pay Now</button>
-            </div>
-            <div class="tour">
-                <h3>Sunset Cruise</h3>
-                <p>$350</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/SMSQE5LQ5EM5S4K2MJ2AHKWA')">Book & Pay Now</button>
-            </div>
-        </div>
-    </section>
-    <section class="contact">
-        
-<section class="testimonials" style="background: #f9f9f9; padding: 50px 20px; text-align: center; margin-top: 40px;">
-  <h2 style="color: #003049; font-size: 2em; margin-bottom: 30px;">What Our Guests Are Saying</h2>
-  <div style="max-width: 800px; margin: 0 auto;">
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"Hands down the best boat day we’ve ever had. Relaxing, scenic, and unforgettable!"<br><strong>- Amanda R.</strong></p>
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"From the dolphins to the sunset, every moment was perfect. Can’t wait to book again."<br><strong>- Jason T.</strong></p>
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"The captain was super chill and the sandbar stop was the highlight of our trip."<br><strong>- Lindsey M.</strong></p>
-  </div>
-</section>
-
-<h2>Contact & Booking</h2>
-        <p>Email: coastalboattourssarasota@gmail.com</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Coastal Boat Tours</p>
-    </footer>
-
-<!-- Modal -->
-<div id="policyModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <h2>Cancellation & Refund Policy</h2>
-    <p>Cancellations made more than 48 hours in advance receive a full refund.</p>
-    <p>Cancellations 24–48 hours in advance receive a 50% refund.</p>
-    <p>Cancellations made less than 24 hours in advance or no-shows are non-refundable.</p>
-    <p>If your tour is canceled by us due to unsafe weather, you may reschedule or receive a full refund.</p>
-    <button id="agreeBtn" class="btn">I Agree</button>
-  </div>
+<div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">☰</div>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="tours.html">Book Now</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="custom.html">Custom Inquiries</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+<a href="captains.html">Captains</a></nav>
+<header class="hero">
+<img alt="Coastal Boat Tours Logo" class="logo" src="logo.png"/>
+<h1>Coastal Boat Tours</h1>
+<p>Explore Sarasota by Water</p>
+<button class="btn" onclick="confirmBooking('tours.html')">Book Now</button>
+</header>
+<section id="tours">
+<div class="tour-options">
+<div class="tour">
+<h3>2-Hour Charter</h3>
+<p>$275</p>
+<button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/DENQ5NJ4IY2XIV2OE5WTACME')">Book &amp; Pay</button>
 </div>
-
+<div class="tour">
+<h3>4-Hour Charter</h3>
+<p>$550</p>
+<button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/HKUPEXV4PF6T3GFFLP3SA6TI')">Book &amp; Pay Now</button>
+</div>
+<div class="tour">
+<h3>6-Hour Charter</h3>
+<p>$825</p>
+<button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/FAZWB6RPQT4CHJ6GH5FUHU4P')">Book &amp; Pay Now</button>
+</div>
+<div class="tour">
+<h3>Sunset Cruise</h3>
+<p>$350</p>
+<button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/SMSQE5LQ5EM5S4K2MJ2AHKWA')">Book &amp; Pay Now</button>
+</div>
+</div>
+</section>
+<section class="contact">
+<section class="testimonials" style="background: #f9f9f9; padding: 50px 20px; text-align: center; margin-top: 40px;">
+<h2 style="color: #003049; font-size: 2em; margin-bottom: 30px;">What Our Guests Are Saying</h2>
+<div style="max-width: 800px; margin: 0 auto;">
+<p style="font-style: italic; font-size: 1.1em; color: #333;">"Hands down the best boat day we’ve ever had. Relaxing, scenic, and unforgettable!"<br/><strong>- Amanda R.</strong></p>
+<p style="font-style: italic; font-size: 1.1em; color: #333;">"From the dolphins to the sunset, every moment was perfect. Can’t wait to book again."<br/><strong>- Jason T.</strong></p>
+<p style="font-style: italic; font-size: 1.1em; color: #333;">"The captain was super chill and the sandbar stop was the highlight of our trip."<br/><strong>- Lindsey M.</strong></p>
+</div>
+</section>
+<h2>Contact &amp; Booking</h2>
+<p>Email: coastalboattourssarasota@gmail.com</p>
+</section>
+<footer>
+<p>© 2025 Coastal Boat Tours</p>
+</footer>
+<!-- Modal -->
+<div class="modal" id="policyModal">
+<div class="modal-content">
+<span class="close" onclick="closeModal()">×</span>
+<h2>Cancellation &amp; Refund Policy</h2>
+<p>Cancellations made more than 48 hours in advance receive a full refund.</p>
+<p>Cancellations 24–48 hours in advance receive a 50% refund.</p>
+<p>Cancellations made less than 24 hours in advance or no-shows are non-refundable.</p>
+<p>If your tour is canceled by us due to unsafe weather, you may reschedule or receive a full refund.</p>
+<button class="btn" id="agreeBtn">I Agree</button>
+</div>
+</div>
 <script>
 let bookingLink = "";
 function confirmBooking(link) {
@@ -102,9 +93,5 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 </script>
-
-
-
-
 </body>
 </html>
