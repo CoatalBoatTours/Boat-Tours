@@ -10,64 +10,6 @@
 <body>
 
 <nav class="navbar">
-    <section class="slideshow-container">
-
-  <div class="slide fade">
-    <img src="38817141-3BAB-41B3-90FE-4AD0F7C97CC1.jpeg" alt="Boat on water" style="width:100%">
-  </div>
-
-  <div class="slide fade">
-    <img src="88ACCDC7-075B-40F9-A47B-26E720652470.jpeg" alt="Guests at sandbar" style="width:100%">
-  </div>
-
-  <div class="slide fade">
-    <img src="B1FF2955-1E56-4374-BBC5-5A95CC567C53.jpeg" alt="Boat at beach" style="width:100%">
-  </div>
-
-</section>
-
-<style>
-.slideshow-container {
-  position: relative;
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.slide {
-  display: none;
-}
-
-.slide img {
-  width: 100%;
-  vertical-align: middle;
-}
-
-.fade {
-  animation: fade 2s ease-in-out;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-</style>
-
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  const slides = document.getElementsByClassName("slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  slides[slideIndex - 1].style.display = "block";  
-  setTimeout(showSlides, 4000); // 4 seconds per slide
-}
-</script>
     <div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">&#9776;</div>
     <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
