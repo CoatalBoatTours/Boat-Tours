@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,48 +15,46 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="tours.html">Book Now</a></li>
         <li><a href="contact.html">Contact</a></li>
-    <li><a href="custom.html">Custom Inquiries</a></li>
-    <li><a href="captains.html">Meet the Captains</a></li>
-      
-</ul>
+        <li><a href="custom.html">Custom Inquiries</a></li>
+        <li><a href="captains.html">Meet the Captains</a></li>
+    </ul>
 </nav>
 
-    <header class="hero">
-        <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo">
-        <h1>Coastal Boat Tours</h1>
-        <p>Explore Sarasota by Water</p>
-        <button class="btn" onclick="confirmBooking('tours.html')">Book Now</button>
-        
-    </header>
-    <section id="tours">
-        
-        <div class="tour-options">
-            
+<header class="hero">
+    <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo">
+    <h1>Coastal Boat Tours</h1>
+    <p>Explore Sarasota by Water</p>
+</header>
+
+<section id="tours">
+    <div class="tour-options">
+
         <div class="tour">
             <h3>2-Hour Charter</h3>
             <p>$275</p>
-            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/DENQ5NJ4IY2XIV2OE5WTACME')">Book & Pay</button>
+            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/DENQ5NJ4IY2XIV2OE5WTACME')">BOOK NOW</button>
         </div>
 
         <div class="tour">
-                <h3>4-Hour Charter</h3>
-                <p>$550</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/HKUPEXV4PF6T3GFFLP3SA6TI')">Book & Pay Now</button>
-            </div>
-            <div class="tour">
-                <h3>6-Hour Charter</h3>
-                <p>$825</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/FAZWB6RPQT4CHJ6GH5FUHU4P')">Book & Pay Now</button>
-            </div>
-            <div class="tour">
-                <h3>Sunset Cruise</h3>
-                <p>$350</p>
-                <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/SMSQE5LQ5EM5S4K2MJ2AHKWA')">Book & Pay Now</button>
-            </div>
+            <h3>4-Hour Charter</h3>
+            <p>$550</p>
+            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/HKUPEXV4PF6T3GFFLP3SA6TI')">BOOK NOW</button>
         </div>
-    </section>
-    <section class="contact">
-        
+
+        <div class="tour">
+            <h3>6-Hour Charter</h3>
+            <p>$825</p>
+            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/FAZWB6RPQT4CHJ6GH5FUHU4P')">BOOK NOW</button>
+        </div>
+
+        <div class="tour">
+            <h3>Sunset Cruise</h3>
+            <p>$350</p>
+            <button class="btn" onclick="confirmBooking('https://book.squareup.com/appointments/86xvdet9b1ecis/location/9K2JABW4HG6Q6/services/SMSQE5LQ5EM5S4K2MJ2AHKWA')">BOOK NOW</button>
+        </div>
+    </div>
+</section>
+
 <section class="testimonials" style="background: #f9f9f9; padding: 50px 20px; text-align: center; margin-top: 40px;">
   <h2 style="color: #003049; font-size: 2em; margin-bottom: 30px;">What Our Guests Are Saying</h2>
   <div style="max-width: 800px; margin: 0 auto;">
@@ -67,12 +64,14 @@
   </div>
 </section>
 
-<h2>Contact & Booking</h2>
-        <p>Email: coastalboattourssarasota@gmail.com</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Coastal Boat Tours</p>
-    </footer>
+<section class="contact">
+    <h2>Contact & Booking</h2>
+    <p>Email: coastalboattourssarasota@gmail.com</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Coastal Boat Tours</p>
+</footer>
 
 <!-- Modal -->
 <div id="policyModal" class="modal">
@@ -103,9 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 </script>
-
-
-
 
 </body>
 </html>
