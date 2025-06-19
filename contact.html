@@ -30,33 +30,22 @@
     <p style="font-size: 1.05em; color: #444; margin-bottom: 30px;">
       Have questions or want to plan a custom experience? Send us a message and we’ll get back to you as soon as we’re off the water.
     </p>
-    <form action="https://formspree.io/f/xbjnvvpz" class="fs-form" method="POST" target="_top">
-      <input type="hidden" name="_next" value="https://coastalboattours.com/thank-you.html" />
-      <input type="hidden" name="_replyto" value="coastalboattourssarasota@gmail.com" />
+    <form action="https://usebasin.com/f/d9a5c9c2066f" method="POST">
+      <input type="hidden" name="redirect" value="https://coastalboattours.com/thank-you.html" />
 
-      <div class="fs-field">
-        <label class="fs-label" for="name">Name</label>
-        <input class="fs-input" id="name" name="name" required />
-      </div>
+      <label for="name">Full Name</label><br>
+      <input type="text" name="name" id="name" required><br><br>
 
-      <div class="fs-field">
-        <label class="fs-label" for="email">Email Address</label>
-        <input class="fs-input" id="email" name="email" required />
-      </div>
+      <label for="email">Email Address</label><br>
+      <input type="email" name="email" id="email" required><br><br>
 
-      <div class="fs-field">
-        <label class="fs-label" for="number">Phone Number</label>
-        <input class="fs-input" id="number" name="number" />
-      </div>
+      <label for="number">Phone Number</label><br>
+      <input type="text" name="number" id="number"><br><br>
 
-      <div class="fs-field">
-        <label class="fs-label" for="message">Inquiry Message</label>
-        <textarea class="fs-textarea" id="message" name="message" required></textarea>
-      </div>
+      <label for="message">Message</label><br>
+      <textarea name="message" id="message" rows="6" required></textarea><br><br>
 
-      <div class="fs-button-group">
-        <button class="fs-button" type="submit">Submit</button>
-      </div>
+      <button type="submit">Submit</button>
     </form>
   </section>
 
