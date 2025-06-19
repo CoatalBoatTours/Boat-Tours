@@ -30,25 +30,33 @@
     <p style="font-size: 1.05em; color: #444; margin-bottom: 30px;">
       Have questions or want to plan a custom experience? Send us a message and we’ll get back to you as soon as we’re off the water.
     </p>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-      <input type="hidden" name="form-name" value="contact" />
-      <p style="display: none;">
-        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-      </p>
-      <div class="form-group">
-        <div class="form-row">
-          <div class="col">
-            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-          </div>
-          <div class="col">
-            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-          </div>
-        </div>
+    <form action="https://formspree.io/f/xbjnvvpz" class="fs-form" method="POST" target="_top">
+      <input type="hidden" name="_next" value="https://coastalboattours.com/thank-you.html" />
+      <input type="hidden" name="_replyto" value="coastalboattourssarasota@gmail.com" />
+
+      <div class="fs-field">
+        <label class="fs-label" for="name">Name</label>
+        <input class="fs-input" id="name" name="name" required />
       </div>
-      <div class="form-group">
-        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+
+      <div class="fs-field">
+        <label class="fs-label" for="email">Email Address</label>
+        <input class="fs-input" id="email" name="email" required />
       </div>
-      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+
+      <div class="fs-field">
+        <label class="fs-label" for="number">Phone Number</label>
+        <input class="fs-input" id="number" name="number" />
+      </div>
+
+      <div class="fs-field">
+        <label class="fs-label" for="message">Inquiry Message</label>
+        <textarea class="fs-textarea" id="message" name="message" required></textarea>
+      </div>
+
+      <div class="fs-button-group">
+        <button class="fs-button" type="submit">Submit</button>
+      </div>
     </form>
   </section>
 
