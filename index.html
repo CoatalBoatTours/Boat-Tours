@@ -1,78 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coastal Boat Tours</title>
+  <title>Pay with Bitcoin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f0f1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #1c1c2e;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    img {
+      width: 250px;
+      margin: 20px auto;
+    }
+    .wallet {
+      font-size: 16px;
+      background-color: #2c2c3e;
+      padding: 12px;
+      border-radius: 8px;
+      word-wrap: break-word;
+      margin-top: 20px;
+    }
+    .instructions {
+      font-size: 15px;
+      margin-top: 30px;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Pay with Bitcoin</h1>
+    <p>Please send your BTC payment to the wallet address below.</p>
 
-<nav class="navbar">
-  <div class="menu-toggle" onclick="document.body.classList.toggle('nav-open')">&#9776;</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="tours.html">Book Now</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="custom.html">Custom Inquiries</a></li>
-    <li><a href="captains.html">Meet the Captains</a></li>
-  </ul>
-</nav>
+    <img src="bitcoin-qr.jpeg" alt="Bitcoin QR Code">
 
-<header class="hero">
-  <img src="logo.png" alt="Coastal Boat Tours Logo" class="logo">
-  <h1>Coastal Boat Tours</h1>
-  <p>Explore Sarasota by Water</p>
-</header>
-
-<section id="tours">
-  <div class="tour-options">
-
-    <div class="tour">
-      <h3>2-Hour Charter</h3>
-      <p>$275</p>
-      <a href="https://coastalboattours.simplybook.me/v2/#book/service/2/count/1/" class="btn" target="_blank">BOOK NOW</a>
+    <div class="wallet">
+      <strong>BTC Address:</strong><br>
+      bc1qhc0zqmn8c78vp5y4ufkqy4qskynheyfymfv3h2
     </div>
 
-    <div class="tour">
-      <h3>4-Hour Charter</h3>
-      <p>$550</p>
-      <a href="https://coastalboattours.simplybook.me/v2/#book/service/3/count/1/" class="btn" target="_blank">BOOK NOW</a>
+    <div class="instructions">
+      <p>⚠️ After sending your payment, please reply to your booking confirmation email with the transaction ID or a screenshot to confirm your reservation.</p>
+      <p>Your booking will be manually confirmed once payment is received.</p>
     </div>
-
-    <div class="tour">
-      <h3>6-Hour Charter</h3>
-      <p>$825</p>
-      <a href="https://coastalboattours.simplybook.me/v2/#book/service/4/count/1/provider/2/" class="btn" target="_blank">BOOK NOW</a>
-    </div>
-
-    <div class="tour">
-      <h3>Sunset Cruise</h3>
-      <p>$350</p>
-      <a href="https://coastalboattours.simplybook.me/v2/#book/service/5/count/1/provider/2/" class="btn" target="_blank">BOOK NOW</a>
-    </div>
-
   </div>
-</section>
-
-<section class="testimonials" style="background: #f9f9f9; padding: 50px 20px; text-align: center; margin-top: 40px;">
-  <h2 style="color: #003049; font-size: 2em; margin-bottom: 30px;">What Our Guests Are Saying</h2>
-  <div style="max-width: 800px; margin: 0 auto;">
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"Hands down the best boat day we’ve ever had. Relaxing, scenic, and unforgettable!"<br><strong>- Amanda R.</strong></p>
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"From the dolphins to the sunset, every moment was perfect. Can’t wait to book again."<br><strong>- Jason T.</strong></p>
-    <p style="font-style: italic; font-size: 1.1em; color: #333;">"The captain was super chill and the sandbar stop was the highlight of our trip."<br><strong>- Lindsey M.</strong></p>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact & Booking</h2>
-  <p>Email: coastalboattourssarasota@gmail.com</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 Coastal Boat Tours</p>
-</footer>
-
 </body>
 </html>
